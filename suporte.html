@@ -5,14 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suporte Stock 360</title>
     <link rel="stylesheet" href="suporte.css">
+    
 </head>
 <body>
-    <img src="images/logo_preta.png" alt="Logo" class="logo">
+    <header>
+        <div class="header"><img src="images/logo_preta.png" alt="Logo" class="logo">
+        </div>
+    </header>
     <div class="container">
         <div class="message">Como podemos te ajudar?</div>
         <div class="support-box">
             <input type="text" placeholder="Digite sua mensagem aqui...">
         </div>
     </div>
+
+    <div class="container">
+        <h1>Dúvidas Frequentes</h1>
+        <div class="faq-section">
+            <div class="faq-item">
+                <h3>Como posso resetar minha senha?</h3>
+                <p>Para resetar sua senha, clique em "Esqueci minha senha" na página de login e siga as instruções.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Como posso entrar em contato com o suporte?</h3>
+                <p>Você pode entrar em contato com o suporte através do email stock360@exemplo.com ou pelo telefone (31) 1234-5678.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Quais métodos de pagamento vocês aceitam?</h3>
+                <p>Aceitamos cartões de crédito, PayPal e transferências bancárias.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Como posso acompanhar os pedidos de entrada e saida </h3>
+                <p>Você pode ver o status de entrega do fornecedor através da aba "entradas"</p>
+            </div>
+        </div>
+    </div>
+    <!-- Botão do chat -->
+<button class="chat-botao" onclick="toggleChat()">
+    💬
+</button>
+
+<!-- Janela de Chat -->
+<div class="chat-janela" id="chatWindow">
+    <div class="chat-header">
+        Suporte Online
+    </div>
+    <div class="chat-body">
+        <!-- Onde aparece as mensagens do chat -->
+        <p><strong>Suporte:</strong> Olá! Como posso ajudar você hoje?</p>
+    </div>
+    <div class="chat-footer">
+        <input type="text" placeholder="Digite sua mensagem..." id="chatInput">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+</div>
+
+    
+<footer>
+    <p>&copy; 2024 Seu Site de Suporte. Todos os direitos reservados.</p>
+</footer>
+    <script src="suporte.js"></script>
+</script>
 </body>
 </html>

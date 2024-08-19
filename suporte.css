@@ -5,8 +5,11 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    position: relative; /* Para posicionamento absoluto dos elementos filhos */
+    background-color: #a5a5a5;
+    position: relative; 
+}
+header{
+background-color: #000000;
 }
 
 .logo {
@@ -16,21 +19,28 @@ body {
 }
 
 .container {
-    text-align: center;
+    text-align:center;
+    width: 80%;
+    margin:auto ;
+    overflow: hidden;
+    padding: 10px ;
+    color: #000000;
+
 }
 
 .message {
-    font-size: 24px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 30px;
     margin-bottom: 20px;
-    color: #5f5f5f;
+    color: #000000;
 }
 
 .support-box {
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #636060;
+    background-color: #0c0909;
     width: 300px;
 }
 
@@ -42,4 +52,110 @@ body {
     border-radius: 4px;
     box-sizing: border-box;
     resize: none;
+}
+
+
+h1 {
+    text-align: center;
+    color: #000000;
+}
+.faq-section {
+    margin: 20px 0;
+}
+.faq-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.faq-item h3 {
+    margin: 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+.faq-item p {
+    display: none;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    background-color: white;
+}
+.faq-item h3:hover {
+    background-color: #f1f1f1;
+}
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.chat-botao {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: rgb(238, 0, 0);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 2; /* faz com que o botão fique acima do footer */
+}
+.chat-janela {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+.chat-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+.chat-body {
+    flex-grow: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+.chat-footer {
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 0 0 10px 10px;
+}
+.chat-footer input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.chat-footer button {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
 }
