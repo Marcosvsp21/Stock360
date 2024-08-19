@@ -18,6 +18,6 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
     <h1>Painel Administrativo</h1>
     <a href="add_product.php">Adicionar Novo Produto</a>
     <a href="logout.php">Sair</a>
-    <!-- Conteúdo do painel administrativo -->
+   
 </body>
 </html>
